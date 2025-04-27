@@ -1,5 +1,5 @@
 FROM node:latest
-WORKDIR /app
+
 COPY ./* ./
 
 RUN npm install -g pnpm --registry=https://registry.npmmirror.com
