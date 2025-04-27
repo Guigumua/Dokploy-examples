@@ -1,5 +1,5 @@
 FROM node:latest
-COPY . .
+COPY . ./
 
 RUN npm install -g pnpm --registry=https://registry.npmmirror.com
 RUN pnpm i --registry=https://registry.npmmirror.com --frozen-lockfile && pnpm run build
